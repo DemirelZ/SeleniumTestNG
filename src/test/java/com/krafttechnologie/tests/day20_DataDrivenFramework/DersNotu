@@ -1,0 +1,12 @@
+Data Driven Framework
+
+Cok sayıdaki datayı dışarıdaki bir kaynaktan
+alarak tek bir test kodu ile testleri yürütmemize yarayan frameworkler
+
+
+Avantajları
+
+- datada yapılan herhangi bir değişiklik koda etki etmez
+-Excel dosyasındaki verileri tek tek çekerek ayrı ayrı test etmemizi sağlar
+- negatif ve pozitif testler birlikte kullanılır
+
