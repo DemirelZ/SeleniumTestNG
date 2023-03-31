@@ -36,9 +36,6 @@ public class DDFWithDataProvider {
 
         System.out.println("Arac Markasi :" +aracMarkasi+" : "+ocak+","+subat+" ,"+mart+" ,"+nisan+"");
 
-
-
-
     }
 
 }

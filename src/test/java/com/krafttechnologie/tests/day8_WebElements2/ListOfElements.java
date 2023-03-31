@@ -13,23 +13,25 @@ import java.util.List;
 
 public class ListOfElements {
     WebDriver driver;
+
     @BeforeMethod
-    public void setUp(){
-        driver= WebDriverFactory.getDriver("chrome");
+    public void setUp() {
+        driver = WebDriverFactory.getDriver("chrome");
         driver.manage().window().maximize();
     }
+
     @AfterMethod
     public void tearDown() {
         driver.close();
     }
 
     @Test
-    public void test(){
+    public void test() {
         driver.get("https://www.krafttechexlab.com/javascript/clicks");
-        List<WebElement> buttons=driver.findElements(By.xpath("//button[@class='btn btn-primary']"));
+        List<WebElement> buttons = driver.findElements(By.xpath("//button[@class='btn btn-primary']"));
         System.out.println("buttons.size() = " + buttons.size());
         Assert.assertEquals(4, buttons.size());
-        for (WebElement button:buttons) {
+        for (WebElement button : buttons) {
             System.out.println("button.getText() = " + button.getText());
             System.out.println("button.isDisplayed() = " + button.isDisplayed());
         }

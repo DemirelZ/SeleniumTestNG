@@ -26,9 +26,10 @@ public class FindElements {
         for (WebElement element : elements) {
             Assert.assertFalse(element.isSelected());
         }
-//        for (WebElement element : elements) {
-//            element.click();
-//        }
+
+        for (WebElement element : elements) {
+            element.click();
+        }
 
         driver.quit();
 

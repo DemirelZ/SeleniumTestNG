@@ -43,14 +43,14 @@ public class DropDownPractice1 {
         WebElement ikinci=driver.findElement(By.cssSelector("#dropdowm-menu-2"));
         Select select2=new Select(ikinci);
         select2.selectByValue("testng");
-        WebElement secondSelectedOption1 = select2.getFirstSelectedOption();
-        System.out.println("secondSelectedOption1.getText() = " + secondSelectedOption1.getText());
+        WebElement secondSelectedOption = select2.getFirstSelectedOption();
+        System.out.println("secondSelectedOption.getText() = " + secondSelectedOption.getText());
 
         WebElement ucuncu=driver.findElement(By.cssSelector("#dropdowm-menu-3"));
         Select select3=new Select(ucuncu);
         select3.selectByIndex(1);
-        WebElement thirdSelectedOption1 = select3.getFirstSelectedOption();
-        System.out.println("thirdSelectedOption1.getText() = " + thirdSelectedOption1.getText());
+        WebElement thirdSelectedOption = select3.getFirstSelectedOption();
+        System.out.println("thirdSelectedOption.getText() = " + thirdSelectedOption.getText());
 
 
     }

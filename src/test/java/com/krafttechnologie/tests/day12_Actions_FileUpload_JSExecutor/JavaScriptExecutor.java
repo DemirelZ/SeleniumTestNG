@@ -35,7 +35,7 @@ public class JavaScriptExecutor {
         Bu sorunlar neler olabilir?
         Clicking, sendkeys, scroll down or up
 
-        JS Executor bit interface old için new kullanarak bit obje oluşturamıyoruz.
+        JS Executor bit interface old için new kullanarak bir obje oluşturamıyoruz.
         bu nedenle driver i casting yaparak kullanıyoruz
          */
 

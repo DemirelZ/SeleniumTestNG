@@ -71,6 +71,7 @@ public class ExplicitlyWait {
         WebElement inputBox = driver.findElement(By.xpath("//input[@type='text']"));
 
         wait.until(ExpectedConditions.elementToBeClickable(inputBox));
+//        wait.until(ExpectedConditions.elementToBeSelected(inputBox));
 
         inputBox.sendKeys("Batch 2 was here");
 
